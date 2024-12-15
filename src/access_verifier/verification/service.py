@@ -10,6 +10,5 @@ def verify_access(ip: str) -> bool:
     :param ip: ip address
     :return: True or False
     """
-    
     access_cache = AccessCache()
     return access_cache.is_trusted_ip(ip)

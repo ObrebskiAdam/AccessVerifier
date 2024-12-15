@@ -44,7 +44,7 @@ jobs:
     
     - name: Run Pylint
       run: |
-        poetry run pylint $(find . -name "*.py" | grep -v "test_")
+        poetry run pylint ./src --fail-under=10
     
     - name: Run PyTest
       run: |

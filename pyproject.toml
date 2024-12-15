@@ -11,15 +11,21 @@ fastapi = "^0.115.6"
 uvicorn = "^0.33.0"
 pylint = "^3.3.2"
 pytest = "^8.3.4"
+redis = "^5.2.1"
+cachetools = "^5.5.0"
 
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
 httpx = "^0.28.1"
+pytest-mock = "^3.14.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-pythonpath = [".", "src"]
+pythonpath = [".", "src/access_verifier"]
+
+[tool.poetry.scripts]
+run-app = "src.access_verifier.main:app"

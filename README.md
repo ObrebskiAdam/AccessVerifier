@@ -1,4 +1,4 @@
-# Access Cache Manager  
+# Acess Verifier
   
 This project provides a module for managing trusted IP addresses using either a local file or a Redis server. The module includes a class `AccessCache` that supports loading trusted IPs from a JSON file or a Redis set, and checking if a given IP address is trusted.  
   

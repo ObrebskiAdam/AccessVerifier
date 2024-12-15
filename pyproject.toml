@@ -22,4 +22,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-pythonpath = [".", "src"]
+pythonpath = [".", "src/access_verifier"]
+
+[tool.poetry.scripts]
+run-app = "src.access_verifier.main:app"
